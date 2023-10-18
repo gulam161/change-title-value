@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
 import "./App.css";
-
 const App = () => {
   const [count, setCount] = useState(0);
   useEffect(() => {
@@ -17,7 +14,7 @@ const App = () => {
   return (
     <>
       <div className="App">
-        <button onClick={() => setCount(num + 1)}>
+        <button onClick={() => setCount(count + 1)}>
           {getAlphabetValue(count)}
         </button>
       </div>
